@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #f0fe6e;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: small-caps 1.8em sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+#navbar__logo {
+
+}
