@@ -12,6 +12,9 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   padding: 1em;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #page-container-and-content-wrap {
@@ -42,23 +45,76 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+.nav-main-aside-container {
+  margin-top: 30px;
+  gap: 25px;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  /* align-items: stretch; */
+  align-content: stretch;
+}
+
+nav {
+  border: 2px solid black;
+  padding: 20px;
+  flex: 30%;
+}
+
+main {
+  border: 2px solid black;
+  padding: 5px;
+  flex: auto;
+}
+
+aside {
+  border: 2px solid black;
+  padding: 5px;
+  flex: 30%;
+}
+
+div#footer-paster {
+  display: flex;
+  flex-direction: column;
+
+  /* margin-top: 30%; */
 }
 
 div.cooler-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; /* Fonter height! */
+  display: flex;
 
   border-top: 0.5mm dashed gray;
   border-bottom: 0.5mm dashed gray;
   padding-top: 2.5mm;
-  padding-bottom: 7mm;
 
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
   font-weight: bolder;
+
+  /* flex: 1 1 0%; */
 }
 
 footer.footer-display {
@@ -66,9 +122,20 @@ footer.footer-display {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  
+  /* flex: 1 1 0%; */
 }
 
 div.post-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom: 0.5mm dashed gray;
-  padding-top: 0.5mm;
+  margin-bottom: -50px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-weight: bolder;
+
+  /* flex: 1 1 0%; */
 }
