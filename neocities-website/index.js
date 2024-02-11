@@ -13,7 +13,7 @@ class ContentAdders {
           <img 
            src="assets/images/neocities.png"
            onerror="this.src='../assets/images/neocities.png';"
-           alt="Neocities logo with a caption &quot;Powered by Neocities&quot;"> 02.2024-THIS_VERY_FEMTOSECOND, by ME
+           alt="Neocities logo with a caption &quot;Powered by Neocities&quot;"> 02.2024 - THIS_VERY_FEMTOSECOND, by ME
         </footer>
         <div class="post-footer">
           <p>EOF</p>
@@ -35,7 +35,7 @@ class SelectorClassAdders {
     for (var i = 0; i < elements.length; i++) {
       elements.item(i).classList.add(this.#cssSelectors.marginPaddingSaviour);
     }
-  } 
+  }
 }
 
 addEventListener("load", (event) => {});
