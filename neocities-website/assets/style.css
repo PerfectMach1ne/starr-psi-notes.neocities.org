@@ -1,0 +1,72 @@
+/* CSS! */
+
+*:not(.margin-padding-saviour) {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+body {
+  background-color: #f2de7c;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+}
+
+#page-container-and-content-wrap {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem; /* Footer height! */
+}
+
+header {
+  /* flex: box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+header.header-border {
+  border: 2rem outset black;
+  border-radius: 5em;
+  padding: 1rem;
+  background: linear-gradient(90deg, #FA5ED2, #F69326, #FDDF1B, #7FF23E, #37D6E9);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+div.cooler-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Fonter height! */
+
+  border-top: 0.5mm dashed gray;
+  border-bottom: 0.5mm dashed gray;
+  padding-top: 2.5mm;
+  padding-bottom: 7mm;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+footer.footer-display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+div.post-footer {
+  border-bottom: 0.5mm dashed gray;
+  padding-top: 0.5mm;
+}
