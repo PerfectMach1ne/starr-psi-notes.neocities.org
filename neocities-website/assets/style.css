@@ -78,21 +78,21 @@ h6 {
   align-content: stretch;
 }
 
-nav {
-  border: 2px solid black;
+div.nav-main-aside-container > nav {
+  border: 10px solid black;
   padding: 20px;
   flex: 30%;
 }
 
-main {
-  border: 2px solid black;
-  padding: 5px;
+div.nav-main-aside-container > main {
+  border: 10px solid black;
+  padding: 20px;
   flex: auto;
 }
 
-aside {
-  border: 2px solid black;
-  padding: 5px;
+div.nav-main-aside-container > aside {
+  border: 10px solid black;
+  padding: 20px;
   flex: 30%;
 }
 
