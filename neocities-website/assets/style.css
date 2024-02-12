@@ -19,7 +19,7 @@ body {
 
 #page-container-and-content-wrap {
   position: relative;
-  min-height: 100vh;
+  min-height: 100vmin;
   padding-bottom: 2.5rem; /* Footer height! */
   margin: 1em;
 }
@@ -100,7 +100,7 @@ div#footer-paster {
   display: flex;
   flex-direction: column;
 
-  /* margin-top: 30%; */
+  margin: 1em; /* So that it matches #page-container-and-content-wrap even outside of it */
 }
 
 div.cooler-footer {
@@ -131,7 +131,8 @@ div.post-footer {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 0.5mm dashed gray;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
+  margin-bottom: -0.5em;
 
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
