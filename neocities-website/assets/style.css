@@ -101,6 +101,7 @@ div#footer-paster {
   flex-direction: column;
 
   margin: 1em; /* So that it matches #page-container-and-content-wrap even outside of it */
+  margin-bottom: 0;
 }
 
 div.cooler-footer {
@@ -132,7 +133,7 @@ div.post-footer {
   align-items: center;
   border-bottom: 0.5mm dashed gray;
   /* margin-bottom: -50px; */
-  margin-bottom: -0.5em;
+  /* margin-bottom: -0.5em; */
 
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;

@@ -19,6 +19,9 @@ class ContentAdders {
           </footer>
         </div>
         <div class="post-footer">
+          <a href="https://github.com/PerfectMach1ne/starr-psi-notes.neocities.org">#."GitHub repo"_</a>
+        </div>
+        <div class="post-footer">
           <p>#.EOF_</p>
         </div>
 `;
