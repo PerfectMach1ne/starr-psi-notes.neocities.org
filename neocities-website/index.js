@@ -6,6 +6,9 @@
 
 var this_variable_is_soooooooooo_important_slash_j = undefined;
 
+// I put methods I plan to use for this website into static classes
+// to make code cleaner and the whole thing easier to comprehend as
+// what it is doing at any given time.
 class ContentAdders {
   static footer = document.getElementById("footer-paster");
   static #footerPasteContent = `
@@ -45,12 +48,13 @@ class SelectorClassAdders {
   }
 }
 
-addEventListener("load", (event) => {});
-onload = (event) => {
-  ContentAdders.footerPaster();
-  SelectorClassAdders.saveMarginsPaddings("ol");
-  SelectorClassAdders.saveMarginsPaddings("ul");
-  SelectorClassAdders.saveMarginsPaddings("dl");
-  SelectorClassAdders.saveMarginsPaddings("dt");
-  SelectorClassAdders.saveMarginsPaddings("dd");
-};
+// All the ordinary utility function calls are below.
+ContentAdders.footerPaster();
+
+SelectorClassAdders.saveMarginsPaddings("ol");
+SelectorClassAdders.saveMarginsPaddings("ul");
+SelectorClassAdders.saveMarginsPaddings("dl");
+SelectorClassAdders.saveMarginsPaddings("dt");
+SelectorClassAdders.saveMarginsPaddings("dd");
+
+// Shoutout to Vim motions girls (myself including)
