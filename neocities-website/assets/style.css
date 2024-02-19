@@ -1,6 +1,6 @@
 /* CSS! */
 
-/* Just learned: couldhave just put here a *:not(.margin-padding-saviour):not(ol) */
+/* Just learned: could have just put here a *:not(.margin-padding-saviour):not(ol) */
 *:not(.margin-padding-saviour) {
   margin: 0;
   margin-bottom: 5px;
@@ -53,11 +53,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -82,6 +82,7 @@ div.nav-main-aside-container > nav {
   border: 10px solid black;
   padding: 20px;
   flex: 30%;
+
   display: flex;
   align-content: stretch;
   flex-flow: column wrap;
@@ -146,3 +147,16 @@ div.post-footer {
 }
 
 /********************************************* NOTEBOOK STYLE *********************************************/
+
+div.nav-main-aside-container > main.notebook {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding-left: 20vw;
+  padding-right: 20vw;
+
+}
+
+main.notebook > p {
+  white-space: pre-wrap; /* Adds tabulators without breaking the text wrapping */
+}
