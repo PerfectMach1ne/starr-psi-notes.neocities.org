@@ -82,6 +82,9 @@ div.nav-main-aside-container > nav {
   border: 10px solid black;
   padding: 20px;
   flex: 30%;
+  display: flex;
+  align-content: stretch;
+  flex-flow: column wrap;
 }
 
 div.nav-main-aside-container > main {
@@ -141,3 +144,5 @@ div.post-footer {
 
   /* flex: 1 1 0%; */
 }
+
+/********************************************* NOTEBOOK STYLE *********************************************/
