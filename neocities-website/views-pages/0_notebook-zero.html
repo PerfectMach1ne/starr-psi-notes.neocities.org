@@ -7,25 +7,20 @@
     
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <script type="module" src="../index.js"></script>
+    <script src="../jquery-git.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var br = $("<br>");
+        var headings = $( "h3" );
+        headings.before( br );
+        headings.after( br );
+      });
+    </script>
   </head>
 
   <body>
-    <script type="module" src="../index.js"></script>
-    <script type="module" src="../jquery-git.js"></script>
-    <script>
-      $( document ).ready( function() {
-          var br = $( "<br>" );
-          var headings = $( ":header" );
-          br.insertBefore( headings );
-          br.insertAfter( headings );
-        }
-      );
-      
-      var br = $( "<br>" );
-      var headings = $( ":header" );
-      br.insertBefore( headings );
-      br.insertAfter( headings );
-    </script>
+
     <div class="page-container-and-content-wrap">
       <header class="header-border">
         <h1>Notebook Zero</h1>
@@ -33,7 +28,6 @@
       <div class="nav-main-aside-container">
         <main class="notebook">
           <h3>Introduction</h3>
-          <!-- <br> -->
           <p>&#09;Hello! If you found yourself reading this, I am both glad and proud of you! Glad because you have shown interest in one of my “less shareable” interests, and proud because you may or may not be sharing some of them with me.
 </p>
           <p>&#09;But first off - what is this?
@@ -43,13 +37,10 @@ The main aim of these notebooks is to index all of the knowledge that I gather o
 </p>
           <p>&#09;In the next few paragraphs, I will try to explain some important rules, the structure and format of this project, mayhaps its history, handling of updates & exports and what exactly I plan to do with it.
 </p>
-          <!-- <br> -->
           <h3>The ω Notes Manifesto</h3>
-          <!-- <br> -->
-          <p>stuff</p>
-          <!-- <br> -->
+          <p>[stufffstest 123 j1k2fhjdhjdhkfwuqfgherifguvjkhfduvifb]
+          </p>
           <h3>Conventions in the Notebooks</h3>
-          <!-- <br> -->
         </main>
       </div>
     </div> <!-- id=page-container-and-content-wrap -->
