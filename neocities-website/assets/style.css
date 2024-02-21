@@ -160,3 +160,26 @@ div.nav-main-aside-container > main.notebook {
 main.notebook > p {
   white-space: pre-wrap; /* Adds tabulators without breaking the text wrapping */
 }
+
+main.notebook > div {
+  white-space: pre-wrap; /* Adds tabulators without breaking the text wrapping */
+}
+
+main.notebook > div.manifesto {
+  margin: 10px;
+  padding: 10px;
+  border-top: 10px dotted #46a46c;
+  border-left: 10px dotted #c493d3;
+  border-right: 10px dotted #60c2df;
+  border-bottom: 10px dotted #ffff00;
+}
+
+main.notebook > div.manifesto > ol {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.65rem;
+  color: #0c343d;
+}
+
+main.notebook > table {
+  white-space: pre-wrap;
+}
