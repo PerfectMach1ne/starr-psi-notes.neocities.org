@@ -22,7 +22,7 @@ class ContentAdders {
           </footer>
         </div>
         <div class="post-footer">
-          <a href="https://github.com/PerfectMach1ne/">#."GitHub repo"_</a>
+          <a href="https://github.com/PerfectMach1ne/starr-psi-notes.neocities.org">#."GitHub repo"_</a>
         </div>
         <div class="post-footer">
           <p>#.EOF_</p>
@@ -48,35 +48,6 @@ class SelectorClassAdders {
   }
 }
 
-class KbityRandomizer {
-  static #kbityArray = [
-    "assets/images/KBITY_TRANSEDEN_TEAL_HEHE_.png",
-    "assets/images/kbity-antinihility-black.png",
-    "assets/images/kbity-chroniclers-gray.png",
-    "assets/images/kbity-dante-green.png",
-    "assets/images/kbity-abyssal-lavender.png",
-    "assets/images/kbity-magical-pink.png",
-    "assets/images/kbity-mainframe-cerulean.png",
-    "assets/images/kbity-matrix-green.png",
-    "assets/images/kbity-order-teal.png",
-    "assets/images/kbity-otherworldly-blue.png",
-    "assets/images/kbity-pandemonium-red.png",
-    "assets/images/kbity-relentless-magenta.png",
-    "assets/images/kbity-system-blue.png",
-    "assets/images/kbity-the-fifth-crimson.png",
-  ]
-
-  static kbityRandomizer() {
-    function getRandomInt(min, max) {
-      const minCeiled = Math.ceil(min);
-      const maxFloored = Math.floor(max);
-      return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
-    }
-
-    return this.#kbityArray[getRandomInt(0, this.#kbityArray.length - 1)];
-  }
-}
-
 // All the ordinary utility function calls are below.
 ContentAdders.footerPaster();
 
@@ -85,7 +56,5 @@ SelectorClassAdders.saveMarginsPaddings("ul");
 SelectorClassAdders.saveMarginsPaddings("dl");
 SelectorClassAdders.saveMarginsPaddings("dt");
 SelectorClassAdders.saveMarginsPaddings("dd");
-
-document.getElementById("kbity").src=KbityRandomizer.kbityRandomizer();
 
 // Shoutout to Vim motions girls (myself including)
