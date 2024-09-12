@@ -1,8 +1,0 @@
-
-        <footer class="footer-display">
-          <img src="assets/images/neocities.png" alt="Neocities logo with a caption &quot;Powered by Neocities&quot;">
-          02.2024-THIS_VERY_FEMTOSECOND, by ME
-        </footer>
-        <div class="post-footer">
-          <p>EOF</p>
-        </div> <!-- post-footer -->

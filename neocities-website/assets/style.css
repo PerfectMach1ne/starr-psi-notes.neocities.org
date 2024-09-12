@@ -8,36 +8,48 @@
 }
 
 body {
-  background-color: #f2de7c;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 1em;
-
   display: flex;
   flex-direction: column;
+
+  padding: 1em;
+
+  background-color: #07190E;
+  background: no-repeat url("./images/bgimg.png");
+  color: white;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
 }
 
 #page-container-and-content-wrap {
   position: relative;
   min-height: 100vmin;
+
   padding-bottom: 2.5rem; /* Footer height! */
   margin: 1em;
 }
 
-header {
-  /* flex: box; */
+/*************** HEADER ZONE BELOW ***************/
+
+.header-container {
   display: flex;
   flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
 }
 
-header.header-border {
-  border: 2rem outset black;
-  border-radius: 5em;
-  padding: 1rem;
-  background: linear-gradient(90deg, #FA5ED2, #F69326, #FDDF1B, #7FF23E, #37D6E9);
+header {
+  /* flex: box; */
+  flex: 0 4;
+  max-width: 50%;
+}
+
+.header-border {
+  padding: 15px;
+
+  border: 2mm solid #532554;
+  background-color: black;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,7 +57,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.front-page-title {
+  color: #184E4E; 
+  border-bottom: 2mm solid #532554;
 }
 
 h2 {
@@ -53,52 +70,74 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
+}
+
+/*************** NAV+MAIN+ASIDE CONTENT BELOW ***************/
+
+.kbity-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kbity {
+  max-width: 225px;
+  max-height: 225px;
 }
 
 .nav-main-aside-container {
-  margin-top: 30px;
-  gap: 25px;
-  
   display: flex;
   flex-flow: row nowrap;
-  /* align-items: stretch; */
   align-content: stretch;
+  align-items: stretch;
+
+  margin-top: 30px;
+  gap: 25px;
+  /* align-items: stretch; */
 }
 
 div.nav-main-aside-container > nav {
-  border: 10px solid black;
-  padding: 20px;
-  flex: 30%;
-
   display: flex;
-  align-content: stretch;
+  flex: 30%;
   flex-flow: column wrap;
+  justify-content: center;
+  /* align-content: stretch; */
+
+  border: 10px solid #3797E0;
+  background-color: #01002F;
+  padding: 20px;
 }
 
 div.nav-main-aside-container > main {
-  border: 10px solid black;
-  padding: 20px;
   flex: auto;
+
+  border: 10px solid #7C55BA;
+  background-color: #01002F;
+  padding: 20px;
 }
 
 div.nav-main-aside-container > aside {
-  border: 10px solid black;
-  padding: 20px;
   flex: 30%;
+  
+  border: 10px solid #EF8203;
+  background-color: #01002F;
+  padding: 20px;
 }
+
+/*************** FOOTER ZONE BELOW ***************/
 
 div#footer-paster {
   display: flex;
@@ -126,8 +165,8 @@ footer.footer-display {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   gap: 15px;
-  
   /* flex: 1 1 0%; */
 }
 
@@ -135,6 +174,7 @@ div.post-footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   border-bottom: 0.5mm dashed gray;
   /* margin-bottom: -50px; */
   /* margin-bottom: -0.5em; */
@@ -142,44 +182,5 @@ div.post-footer {
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
   font-weight: bolder;
-
   /* flex: 1 1 0%; */
-}
-
-/********************************************* NOTEBOOK STYLE *********************************************/
-
-div.nav-main-aside-container > main.notebook {
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
-
-}
-
-main.notebook > p {
-  white-space: pre-wrap; /* Adds tabulators without breaking the text wrapping */
-}
-
-main.notebook > div {
-  white-space: pre-wrap; /* Adds tabulators without breaking the text wrapping */
-}
-
-main.notebook > div.manifesto {
-  margin: 10px;
-  padding: 10px;
-  border-top: 10px dotted #46a46c;
-  border-left: 10px dotted #c493d3;
-  border-right: 10px dotted #60c2df;
-  border-bottom: 10px dotted #ffff00;
-}
-
-main.notebook > div.manifesto > ol {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.65rem;
-  color: #0c343d;
-}
-
-main.notebook > table {
-  white-space: pre-wrap;
 }
